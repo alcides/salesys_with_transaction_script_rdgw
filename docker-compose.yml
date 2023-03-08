@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  # APP*****************************************
+  springbootapp:
+    image: springbootapp:latest
+    build:
+      context: .
+    network_mode: bridge
+    container_name: springbootapp
